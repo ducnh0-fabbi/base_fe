@@ -1,0 +1,19 @@
+.sidebar-close {
+  margin-left: -237px;
+  transition: margin-left 0.4s
+}
+
+.sidebar-show {
+  margin-left: 0;
+  transition: margin-left 0.4s
+}
+
+.div-show {
+  margin-left: 237px;
+  transition: margin-left 0.4s
+}
+
+.div-close {
+  margin-left: 0;
+  transition: margin-left 0.4s
+}

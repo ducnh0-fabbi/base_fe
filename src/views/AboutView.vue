@@ -11,6 +11,6 @@
       setTimeout(() => {
         changeLanguage('ja');
       }, 1000)
-    }
+    },
   }
 </script>

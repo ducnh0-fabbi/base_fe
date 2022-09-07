@@ -1,0 +1,38 @@
+@for $i from 0 through 7 {
+  .font-weight-#{$i} {
+    font-weight: $i * 100;
+  }
+}
+
+$sizes: (
+  'xs': 12px,
+  'sm': 14px,
+  'md': 16px,
+  'lg': 18px,
+  'lg20': 20px,
+  'xl1': 24px,
+  'xl': 26px,
+  'xxl': 28px,
+);
+
+@each $size,
+$fontSize in $sizes {
+  .font-size-#{$size} {
+    font-size: $fontSize;
+  }
+}
+
+@for $i from 0 through 100 {
+  .margin-left-#{$i} {
+    margin-left: $i * 1px;
+  }
+  .margin-right-#{$i} {
+    margin-right: $i * 1px;
+  }
+  .margin-bottom-#{$i} {
+    margin-bottom: $i * 1px;
+  }
+  .margin-top-#{$i} {
+    margin-top: $i * 1px;
+  }
+}

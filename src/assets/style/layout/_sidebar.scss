@@ -1,0 +1,60 @@
+@use '../abstracts/colors' as *;
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 237px;
+  background-color: $BLUE_03;
+  overflow-y: auto;
+  padding-top: 40px;
+  a {
+    text-decoration: none;
+  }
+  .sidebar-logo {
+    margin-bottom: 20px;
+  }
+  .sidebar-header {
+    min-height: 500px;
+  }
+  .option {
+    .router-link-exact-active {
+      .option__div {
+        background-color: $BLUE_1E;
+      }
+    }
+    color: $WHITE;
+    text-decoration: none;
+    padding: 0 20px;
+    &__div {
+      padding: 0 18px;
+      height: 51px;
+      font-size: 14px;
+      color: $WHITE;
+      border-radius: 14px;
+      font-weight: 500;
+    }
+
+    &__div:hover {
+      background-color: $BLUE_1E;
+    }
+    
+  }
+
+  &-title {
+    color: $WHITE;
+    padding: 25px 0;
+    font-size: 15px;
+    // background-color: $WHITE;
+  }
+  img {
+    margin-right: 10px;
+  }
+  .button-back {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+}

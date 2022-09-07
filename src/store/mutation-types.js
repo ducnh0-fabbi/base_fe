@@ -13,4 +13,8 @@ export const AUTH = {
   CHANGE_LANGUAGE: 'CHANGE_LANGUAGE'
 };
 
+export const SIDEBAR = {
+  CHANGE_SIDEBAR: 'CHANGE_SIDEBAR'
+}
+
 export const SET_LOCALE = "SET_LOCALE";

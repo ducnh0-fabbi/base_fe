@@ -8,6 +8,13 @@
         "login": "Đăng nhập"
     },
 
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "user": "Ứng Viên",
+        "jobs": "Jobs",
+        "interview": "Lịch Phỏng Vấn"
+    },
+
     "validations": {
         "required": "{property}は入力必須項目です。",
         "requiredIf": "{property}は入力必須項目です。",

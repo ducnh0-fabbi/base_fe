@@ -6,17 +6,37 @@ const routes = [
   {
     path: '/',
     component: () => import('../layouts/DefaultLayout.vue'),
-    meta: {
-      name: 'Home',
-    },
     children: [
       {
-        path: '',
-        name: 'Top Screen',
-        component: views('HomeView.vue'),
+        path: '/',
+        name: 'dashboard',
+        component: views('DashBoard.vue'),
         meta: {
-          title: 'Top Screen',
-          middleware: true
+          title: 'DashBoard',
+        },
+      },
+      {
+        path: '/jobs',
+        name: 'jobs',
+        component: views('JobManagement.vue'),
+        meta: {
+          title: 'Jobs',
+        },
+      },
+      {
+        path: '/user',
+        name: 'user',
+        component: views('UserManagement.vue'),
+        meta: {
+          title: 'User',
+        },
+      },
+      {
+        path: '/interview',
+        name: 'interview',
+        component: views('InterviewManagement.vue'),
+        meta: {
+          title: 'Interview',
         },
       },
       {
