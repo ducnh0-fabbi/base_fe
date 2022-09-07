@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <p>{{ $i18n.t('message.login') }}</p>
   </div>
 </template>
+
+<script>
+  import { changeLanguage } from '@/plugins/i18n';
+  export default {
+    created() {
+      setTimeout(() => {
+        changeLanguage('ja');
+      }, 1000)
+    }
+  }
+</script>

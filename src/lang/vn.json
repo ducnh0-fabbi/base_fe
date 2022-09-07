@@ -1,0 +1,35 @@
+{
+    "button": {
+        "confirm": "Đồng ý",
+        "back": "Trở lại"
+    },
+
+    "message": {
+        "login": "Đăng nhập"
+    },
+
+    "validations": {
+        "required": "{property}は入力必須項目です。",
+        "requiredIf": "{property}は入力必須項目です。",
+        "maxLength": "{property}には{max}数字以下で入力してください。",
+        "minValue": "{property}には最低限{min}文字数以上入力してください。",
+        "maxValue": "{property}には0か{max}までの範囲で入力してください。",
+        "numeric": "{property}には半角数字を入力してください。",
+        "integer": "{property}には半角数字を入力してください。",
+        "japaneseFullWidthOnly": "{property}には全角文字を入力してください。",
+        "japaneseFullWidthAlphabetOnly": "{property}には全角文字を入力してください。",
+        "isNotSameAddress": "{property}には重複しています。",
+        "isNotSameTrainLine": "{property}には重複しています。",
+        "isNotSameStation": "{property}には重複しています。",
+        "isNotSameAddressReExhibit": "{property}には重複しています。",
+        "isNotSameTrainLineReExhibit": "{property}には重複しています。",
+        "isNotSameStationReExhibit": "{property}には重複しています。",
+        "isNotFormatEmail": "{property}にはメールアドレスの形式で入力してください。",
+        "isNotFormatPassword": "{property}には半角アルファベットの大文字と小文字および数字・記号の組み合わせた8文字以上で設定してください。",
+        "numericCustomText": "{property}には半角数字を入力してください。",
+        "numericMaxValueCustomText": "{property}には0か2147483647までの範囲で入力してください。",
+        "integerCustomCurrency": "{property}には整数を入力してください。",
+        "minValueCustomCurrency": "{property}には最低限0文字数以上入力してください。",
+        "isNotSameMail": "メールアドレスとメールアドレス（確認用）は一致しません。"
+      }
+}
