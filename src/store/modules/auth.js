@@ -25,8 +25,7 @@ export const mutations = {
   [AUTH.LOGIN](state, data) {
     if (!data.error) {
       state.accessToken = data.data.access_token;
-      state.isLogin = true;
-      setAccessToken(data.data.access_token, data.data.refresh_token, data.checkBox, data.data.user_id);
+      setAccessToken(data.data.access_token, data.data.refresh_token, data.data.user_id);
     }
   },
 
@@ -58,14 +57,10 @@ export const mutations = {
 export const actions = {
   async login({ commit }, payload) {
     const res = await login(payload);
-    const data = {
-      data: res,
-      checkBox: payload.check_box
-    };
     if (res.error) {
       return res;
     }
-    commit(AUTH.LOGIN, data);
+    commit(AUTH.LOGIN, res);
     return false;
   },
   async register(_, payload) {

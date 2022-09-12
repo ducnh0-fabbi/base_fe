@@ -39,15 +39,15 @@ const routes = [
           title: 'Interview',
         },
       },
-      {
-        path: 'about',
-        name: 'Login',
-        component: views('AboutView.vue'),
-        meta: {
-          title: 'Login',
-        },
-      },
     ]
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: views('LoginView.vue'),
+    meta: {
+      title: 'Login',
+    },
   }
 ];
 

@@ -22,10 +22,6 @@ const setAccessToken = (token, refreshToken, checkBox, userId) => {
     const time = now.getTime();
     const expireTime = time + 1000 * 36000;
     now.setTime(expireTime);
-    Cookie.set(REMEMBER_ME, checkBox, {
-        expires: now,
-        secure: true,
-    });
     Cookie.set(ACCESS_TOKEN, token, {
         expires: now,
         secure: true
