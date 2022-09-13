@@ -14,7 +14,8 @@ import {
   confirmed,
   numeric,
 } from '@vee-validate/rules';
-import { PASSWORD_REGEX, EMAIL_REGEX } from '@/constants/regex';
+import { EMAIL_REGEX } from '@/constants/regex';
+import i18n from '@/plugins/i18n';
 
 export default {
   install: function (app) {
@@ -38,24 +39,24 @@ export default {
         return false;
       }
 
-      return PASSWORD_REGEX.test(value);
+      return true;
     });
 
     configure({
       generateMessage: (context) => {
         const messages = {
-          required: `${context.field} là bắt buộc`,
+          required: `${context.field} ${i18n.global.t('validations.required')}`,
           min: `${context.field}は、8文字以上にしてください。`,
           min_value: `${context.field}は、8文字以上にしてください。`,
-          email: `${context.field} không hợp lệ`,
+          email: `${context.field} ${i18n.global.t('validations.email')}`,
           confirmed: `${context.rule.params[1]}と${context.field}が一致しません。`,
           max: `${context.field}は、${context.rule.params[0]}文字以下にしてください。`,
-          password: `${context.field} không hợp lệ`,
+          password: `${context.field} ${i18n.global.t('validations.password')}`,
           numeric: `${context.field}には、数字を指定してください。`,
         };
         const message = messages[context.rule.name]
           ? messages[context.rule.name]
-          : `${context.field}は、必ず指定してください。`;
+          : `${context.field} ${i18n.global.t('validations.required')}`;
         return message;
       },
       validateOnBlur: true,
