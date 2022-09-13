@@ -1,0 +1,28 @@
+@use '../abstracts/colors'as *;
+
+.dashboard-body {
+  min-height: 62em;
+  .width-half {
+    width: 50%;
+  }
+  .list-stage {
+    .w20 {
+      width: 20%;
+      .title {
+        height: 20px;
+      }
+    }
+  }
+  .size-number {
+    font-size: 5em;
+  }
+  .prelabel {
+    width: 8px;
+    height: 30px;
+
+    background: #F573A2;
+    border-radius: 14px;
+  }
+}
+
+
