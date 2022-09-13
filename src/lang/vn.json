@@ -45,7 +45,8 @@
 
     "validations": {
         "email": "không hợp lệ",
-        "required": "là bắt buộc"
+        "required": "là bắt buộc",
+        "password": "không hợp lệ"
     },
 
     "property": {
