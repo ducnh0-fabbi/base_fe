@@ -1,0 +1,157 @@
+@use '../abstracts/colors' as *;
+
+.a-select {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border: 1px solid $WHITE_E8;
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+
+  .mask-tab {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    input {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  &.disabled {
+    background-color: $WHITE_F1;
+    cursor: default;
+  }
+
+  &.empty {
+    .a-select-value {
+      p {
+        // color: $BLUE_0C;
+        opacity: .65;
+      }
+    }
+  }
+
+  // &.a-select-focused {
+  //   // border: 1px solid $BLUE_1F;
+  //   // box-shadow: 0 0 0 2px rgba($color: $BLUE_18, $alpha: 0.2);
+  // }
+
+  &.open {
+    // border: 1px solid $BLUE_04;
+
+    .a-select-value {
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &-value {
+    height: 100%;
+    line-height: 1;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      transition: ease .3s;
+      width: 13px;
+      height: 7px;
+      background: url('@/assets/images/select.svg') no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: $BLACK_22;
+      //white-space: nowrap;
+      padding-right: 13px;
+      word-break: break-all;
+    }
+  }
+
+  &-list {
+    position: absolute;
+    z-index: 3;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow: auto;
+    box-shadow: 0px 3px 27px rgba($color: $BLACK, $alpha: 0.059);
+    background-color: $WHITE;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $WHITE_F0;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $GRAY_9F;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $GRAY_62;
+    }
+  }
+
+  &-search {
+    padding: 5px;
+
+    input {
+      width: 100%;
+      height: 40px;
+      border-radius: 3px;
+      padding: 0 10px;
+      border: 1px solid $WHITE_E8;
+
+      &:focus {
+        outline: none;
+        // border: 1px solid $BLUE_04;
+      }
+    }
+  }
+
+  &-option {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: ease .2s;
+
+    &:hover {
+      background-color: $WHITE_F1;
+    }
+
+    &.selected {
+      background-color: $BLUE_E8;
+      color: $BLUE_04;
+    }
+  }
+}

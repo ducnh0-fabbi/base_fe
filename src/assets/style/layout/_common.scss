@@ -4,3 +4,17 @@
   color: $RED_FB;
   font-size: 12px;
 }
+
+input, button {
+  outline: none;
+  box-shadow: none;
+}
+
+.ant-picker-focused, .ant-picker:hover, .ant-picker-focused {
+  border-color:  $WHITE_E8 !important;
+  box-shadow: unset !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
