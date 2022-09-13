@@ -24,8 +24,8 @@ export const getters = {
 export const mutations = {
   [AUTH.LOGIN](state, data) {
     if (!data.error) {
-      state.accessToken = data.data.access_token;
-      setAccessToken(data.data.access_token, data.data.refresh_token, data.data.user_id);
+      state.accessToken = data.data.token;
+      setAccessToken(data.data.token);
     }
   },
 
@@ -58,10 +58,10 @@ export const actions = {
   async login({ commit }, payload) {
     const res = await login(payload);
     if (res.error) {
-      return res;
+      return false;
     }
     commit(AUTH.LOGIN, res);
-    return false;
+    return true;
   },
   async register(_, payload) {
     const res = await register(payload);

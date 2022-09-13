@@ -77,7 +77,7 @@ axios.interceptors.response.use(
                 refresh_token: getRefreshToken(),
               })
               .then((res) => {
-                error.config.headers.Authorization = `Bearer ${res.data.access_token}`;
+                error.config.headers.Authorization = `Bearer ${res.data.token}`;
                 processQueue(null, getAccessToken());
                 resolve(axios(originalRequest));
               })

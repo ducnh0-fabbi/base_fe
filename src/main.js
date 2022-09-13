@@ -11,6 +11,8 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import vuelidate from "@/plugins/vuelidate";
 import clickOutside from '@/directives/click-outside';
+import VueLoading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
 
 const app = createApp(App);
 app.directive('click-outside', clickOutside);
@@ -22,4 +24,5 @@ app.use(i18n)
 .use(store)
 .use(vuelidate)
 .use(Antd)
+.use(VueLoading)
 .mount('#app');
