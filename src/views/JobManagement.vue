@@ -1,5 +1,9 @@
 <template>
   <div>
-    Job
+    <JobRhr />
   </div>
 </template>
+
+<script setup>
+ import JobRhr from '@/components/JobRhr.vue';
+</script>

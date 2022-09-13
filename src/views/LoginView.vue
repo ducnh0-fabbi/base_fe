@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-center align-items-center" id="login">
     <div class="login-form">
-      <img class="login-form__login" src="@/assets/image/logo-login.svg" alt="">
+      <img class="login-form__login" src="@/assets/images/logo-login.svg" alt="">
       <VeeForm @submit="onSubmit" class="text-left">
         <div class="login-form__login--div __top">
           <VeeField class="font-size-14" v-model="email" id="email" :name="$i18n.t('property.email')" rules="required|email" :placeholder="$i18n.t('property.email')" />

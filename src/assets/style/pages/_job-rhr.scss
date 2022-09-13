@@ -1,0 +1,77 @@
+@use '../abstracts/colors'as *;
+
+#job-rhr {
+  .header {
+    padding: 16px 20px;
+    background-color: $WHITE_F8;
+    &__left {
+      width: 284px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: $GRAY_E1;
+      padding: 2px;
+      color: $BLACK_05;
+      cursor: pointer;
+      .active {
+        background-color: $WHITE;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+      &--button:hover {
+        background-color: $WHITE;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+      &--button {
+        width: calc(50% - 1px);
+      }
+    }
+
+    &__right {
+      &-export {
+        color: $WHITE;
+        width: 217px;
+        height: 40px;
+        border-radius: 14px;
+        background-color: $RED_F5;
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+
+  .content {
+    &_header {
+      &--top {
+        padding: 20px;
+        &-filter {
+          text-align: left;
+        }
+        &__border {
+          height: 1px;
+          background-color: $WHITE_EA;
+          margin-left: -20px;
+          margin-right: -20px;
+        }
+      }
+      &__input {
+        width: 217px;
+        height: 40px;
+        border: 1px solid $WHITE_E8;
+        &.__button {
+          background-color: $BLUE_1E;
+          border: none;
+          color: $WHITE;
+        }
+        &.date-picker-input {
+          border: none
+        } 
+        &.__job {
+          padding: 0 15px
+        }
+      }
+    }
+  }
+}
