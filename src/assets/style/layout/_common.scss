@@ -1,0 +1,6 @@
+@use '../abstracts/colors' as *;
+
+.errors {
+  color: $RED_FB;
+  font-size: 12px;
+}
