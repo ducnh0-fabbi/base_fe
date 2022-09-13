@@ -2,11 +2,36 @@
     "button": {
         "confirm": "Đồng ý",
         "back": "Trở lại",
-        "login": "Đăng nhập"
+        "login": "Đăng nhập",
+        "active": "Active",
+        "inactive": "Inactive",
+        "export": "Export",
+        "search": "Tìm kiếm"
     },
 
     "message": {
         "login": "Đăng nhập"
+    },
+
+    "label": {
+        "job": "Tên Job",
+        "company": "Công ty",
+        "block": "Khối",
+        "group": "Bộ phận",
+        "time_start": "Thời gian bắt đầu",
+        "time_end": "Thời gian kết thúc",
+        "skill": "Skill",
+        "level": "Level",
+        "priority": "Mức độ ưu tiên"
+    },
+
+    "placeholder": {
+        "change": "Lựa chọn",
+        "job": "Nhập tên job"
+    },
+
+    "header": {
+        "filter": "Bộ lọc dữ liệu"
     },
 
     "sidebar": {
