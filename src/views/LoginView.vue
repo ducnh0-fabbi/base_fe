@@ -22,18 +22,34 @@
 <script setup>
   import { ref } from 'vue';
   import { useStore } from 'vuex';
+  import { notification } from 'ant-design-vue';
+  import i18n from '@/plugins/i18n';
+  import { useLoading } from 'vue-loading-overlay'
 
   let email = ref(null);
 
   let password = ref(null);
 
+  const $loading = useLoading()
+
   const store = useStore();
 
   const onSubmit = async () => {
+    const loader = $loading.show();
     const data = {
-      'email': email,
-      'password': password,
+      'email': email.value,
+      'password': password.value,
     }
-    await store.dispatch('auth/login', data)
+    const isLogin = await store.dispatch('auth/login', data);
+    if (isLogin) {
+      notification['success']({
+        message: i18n.global.t('message.login_success')
+      })
+    } else {
+      notification['error']({
+        message: i18n.global.t('message.login_fail')
+      })
+    }
+    loader.hide();
   }
 </script>

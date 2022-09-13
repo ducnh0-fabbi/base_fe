@@ -17,7 +17,7 @@ const removeAccessToken = () => {
     Cookie.remove(USER_ACCOUNT_ID);
 };
 
-const setAccessToken = (token, refreshToken, checkBox, userId) => {
+const setAccessToken = (token) => {
     const now = new Date();
     const time = now.getTime();
     const expireTime = time + 1000 * 36000;
@@ -26,14 +26,14 @@ const setAccessToken = (token, refreshToken, checkBox, userId) => {
         expires: now,
         secure: true
     });
-    Cookie.set(REFRESH_TOKEN, refreshToken, {
-        expires: now,
-        secure: true
-    });
-    Cookie.set(USER_ACCOUNT_ID, userId, {
-        expires: now,
-        secure: true
-    });
+    // Cookie.set(REFRESH_TOKEN, refreshToken, {
+    //     expires: now,
+    //     secure: true
+    // });
+    // Cookie.set(USER_ACCOUNT_ID, userId, {
+    //     expires: now,
+    //     secure: true
+    // });
 };
 
 const setFcmToken = (token) => {
