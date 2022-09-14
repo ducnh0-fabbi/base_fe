@@ -115,16 +115,16 @@
   </div>
 </template>
 <script>
-import backicon from "../assets/image/back.svg";
-import editicon from "../assets/image/edit.svg";
-import delicon from "../assets/image/del.svg";
-import addicon from "../assets/image/addicon.svg";
-import avatar1 from "../assets/image/avatar1.svg";
-import avatar2 from "../assets/image/avatar2.svg";
-import avatar3 from "../assets/image/avatar3.svg";
-import avatar4 from "../assets/image/avatar4.svg";
-import orangerectangle from "../assets/image/orangerectangle.svg";
-import greenrectangle from "../assets/image/greenrectangle.svg";
+import backicon from "../assets/images/back.svg";
+import editicon from "../assets/images/edit.svg";
+import delicon from "../assets/images/del.svg";
+import addicon from "../assets/images/addicon.svg";
+import avatar1 from "../assets/images/avatar1.svg";
+import avatar2 from "../assets/images/avatar2.svg";
+import avatar3 from "../assets/images/avatar3.svg";
+import avatar4 from "../assets/images/avatar4.svg";
+import orangerectangle from "../assets/images/orangerectangle.svg";
+import greenrectangle from "../assets/images/greenrectangle.svg";
 export default {
   components: {},
   data() {

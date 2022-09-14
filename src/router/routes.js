@@ -27,11 +27,19 @@ const routes = [
         },
       },
       {
+        path: '/job-manager',
+        name: 'jobs',
+        component: views('JobManager.vue'),
+        meta: {
+          title: 'Jobs',
+        },
+      },
+      {
         path: '/job-detail',
-        name: 'job',
+        name: 'jobs',
         component: views('JobDetail.vue'),
         meta: {
-          title: 'JobDetail',
+          title: 'Jobs',
         },
       },
       {
