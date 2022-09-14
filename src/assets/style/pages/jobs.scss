@@ -1,0 +1,265 @@
+@use "../abstracts/colors" as *;
+#job {
+  padding-top: 16px;
+  background-color: $WHITE_F5;
+
+  .tab {
+    text-align: left;
+    margin: 0px 20px 16px;
+    position: relative;
+    max-width: 284px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e1e1e1;
+    background: #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    justify-content: space-between;
+    &__active,
+    &__inactive {
+      max-width: 140px;
+      width: 100%;
+      background: #e1e1e1;
+      border: none;
+      padding: 8.5px 46px;
+    }
+  }
+
+  .active {
+    background: #ffffff;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    padding: 8px 46px;
+  }
+
+  .search {
+    background: $WHITE;
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    &__header {
+      & > h1 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.0703846px;
+        color: $BLACK_05;
+        margin-bottom: 20px;
+      }
+      & > hr {
+        margin: 20px 20px 0 0;
+      }
+    }
+    &__body {
+      display: flex;
+      flex-direction: row;
+      &.container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+        position: relative;
+        & > img {
+          max-width: 20px;
+          max-height: 20px;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          bottom: 13px;
+          right: 14px;
+        }
+        & > p,
+        & > label {
+          margin-top: 20px;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.0703846px;
+          color: $BLACK_05;
+          margin-bottom: 8px;
+        }
+        & > input,
+        & > select {
+          background: #ffffff;
+          border: 1px solid #e8e8e8;
+          border-radius: 14px;
+          padding: 12px 14px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.0703846px;
+          color: #a5a5a5;
+        }
+        & > div {
+          & > input {
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+            padding: 12px 14px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.0703846px;
+            color: #a5a5a5;
+            max-width: 310px;
+            width: 100%;
+          }
+          & > img {
+            margin-left: -34px;
+            margin-right: 10px;
+          }
+          & > button {
+            margin-left: 22px;
+            padding: 12px 63px 12px 92px;
+            max-width: 310px;
+            width: 100%;
+            background: $BLUE_1E;
+            border-radius: 14px;
+            border: none;
+            color: $WHITE;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            cursor: pointer;
+            position: relative;
+          }
+        }
+        &--searchicon {
+          position: absolute;
+          top: 12px;
+          left: 35%;
+        }
+      }
+    }
+  }
+  .listjob {
+    margin-top: 10px;
+    background-color: $WHITE;
+    text-align: left;
+    padding: 20px;
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      & > h1 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.0703846px;
+        color: #050b46;
+        margin-bottom: 20px;
+      }
+      &.addjob {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        padding: 15px 17px;
+        & > img {
+          max-width: 26px;
+          max-height: 26px;
+          width: 100%;
+          height: 100%;
+          margin-right: 10px;
+        }
+        & > p {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.0703846px;
+          color: $PINK_DB;
+          /* margin: 5px 0px 0 10px; */
+          margin: auto;
+        }
+      }
+      &.addjob:hover {
+        background: $WHITE_F2F2;
+        border-radius: 35px;
+      }
+    }
+    &__body {
+      &.header,
+      &.body {
+        display: flex;
+        flex-direction: row;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0703846px;
+        color: $BLUE_17;
+        padding: 18px 30px;
+        background-color: $BLUE_D3;
+        border-radius: 14px;
+        justify-content: space-between;
+
+        & > p {
+          margin-bottom: 0;
+          display: block;
+          & > img {
+            max-width: 15px;
+            max-height: 15px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &--job {
+          max-width: 150px;
+          width: 100%;
+        }
+        &--company {
+          max-width: 150px;
+          width: 100%;
+        }
+        &--block {
+          max-width: 100px;
+          width: 100%;
+        }
+        &--unit {
+          max-width: 200px;
+          width: 100%;
+        }
+        &--numberneed {
+          max-width: 170px;
+          width: 100%;
+        }
+        &--numberhave {
+          max-width: 170px;
+          width: 100%;
+        }
+        &--startday {
+          max-width: 170px;
+          width: 100%;
+        }
+        &--endday {
+          max-width: 170px;
+          width: 100%;
+        }
+        &--action {
+          max-width: 100px;
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+      &.body {
+        cursor: pointer;
+        background-color: $WHITE;
+        color: $BLACK_05;
+        border: 1px solid $BLUE_D3;
+        font-weight: 400;
+        margin: 4px 0;
+      }
+      &.body:hover {
+        background: $YELLOW__FFF;
+        border: 1px solid $BLUE_D3;
+        border-radius: 14px;
+      }
+      .listjob__body.body.focus {
+        background: $YELLOW__FFF;
+        border: 1px solid $BLUE_D3;
+        border-radius: 14px;
+      }
+    }
+  }
+}
