@@ -1,0 +1,45 @@
+@use '../abstracts/colors'as *;
+
+#job-detail {
+  background: $WHITE;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  width: 100%;
+  padding: 18px;
+  label {
+    white-space: pre-wrap;
+  }
+  .job-detail__header {
+    color: $GRAY_71;
+    &-dot {
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: $GRAY_D9;
+    }
+    &-status {
+      width: 74px;
+      height: 23px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      border: 1px solid $RED_FF;
+      color: $RED_FF;
+      font-weight: 400;
+    }
+    padding-bottom: 12px;
+    border-bottom: 1px solid $GRAY_E3;
+  }
+
+  .job-detail__center {
+    padding: 12px 0;
+    font-size: 14px;
+    color: $GRAY_94;
+    p {
+      color: $BLACK_05
+    }
+    border-bottom: 1px solid $GRAY_E3;
+  }
+}
