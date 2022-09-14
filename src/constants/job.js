@@ -14,4 +14,9 @@ export const LIST_COMPANIES = [
     id: 3,
     name: 'Fabbi JSC'
   }
-]
+];
+
+export const STATUS_JOB_OPEN = 'jobOpens';
+export const STATUS_JOB_PENDING = 'jobPendings';
+export const STATUS_JOB_DOING = 'jobDoings';
+export const STATUS_JOB_DONE = 'jobDones';

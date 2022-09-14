@@ -43,7 +43,9 @@
   }
 
   .content {
+    background-color: $WHITE_F8;
     &_header {
+      background-color: $WHITE;
       &--top {
         padding: 20px;
         &-filter {
@@ -70,6 +72,58 @@
         } 
         &.__job {
           padding: 0 15px
+        }
+      }
+    }
+    &_center {
+      background-color: $WHITE;
+      padding: 20px;
+      color: $BLACK_05;
+      &-list-job {
+        &__div {
+          width: calc(25% - 8px);
+          &-header {
+            height: 50px;
+            width: 100%;
+            padding: 0 16px;
+            background-color: $WHITE_F8;
+            color: $BLACK_05;
+            border-radius: 14px;
+            .border {
+              width: 8px;
+              height: 30px;
+              border-radius: 14px;
+              margin-right: 10px;
+              &.__new {
+                background-color: $RED_F5;
+              }
+              &.__pending {
+                background-color: $RED_F5;
+              }
+              &.__doing {
+                background-color: $BLUE_17;
+              }
+              &.__done {
+                background-color: $GREEN_1E;
+              }
+            }
+            .amount {
+              width: 29px;
+              height: 26px;
+              border-radius: 6px;
+              border: 1px solid $GRAY_D9;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: $WHITE;
+            }
+          }
+          &-detail {
+            padding: 16px;
+            background-color: $WHITE_F8;
+            border-radius: 14px;
+            height: calc(100% - 62px);
+          }
         }
       }
     }

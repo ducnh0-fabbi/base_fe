@@ -24,7 +24,12 @@
         "time_end": "Thời gian kết thúc",
         "skill": "Skill",
         "level": "Level",
-        "priority": "Mức độ ưu tiên"
+        "priority": "Mức độ ưu tiên",
+        "time_request": "Ngày yêu cầu",
+        "time_onboard": "Ngày onboard",
+        "amount": "Số lượng",
+        "men_request": "Người yêu cầu",
+        "review": "Xem chi tiết"
     },
 
     "placeholder": {
@@ -33,7 +38,8 @@
     },
 
     "header": {
-        "filter": "Bộ lọc dữ liệu"
+        "filter": "Bộ lọc dữ liệu",
+        "list_job": "Danh sách jobs"
     },
 
     "sidebar": {
