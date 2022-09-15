@@ -82,6 +82,7 @@
         }
         & > input,
         & > select {
+          height: 40px;
           background: #ffffff;
           border: 1px solid #e8e8e8;
           border-radius: 14px;
@@ -93,6 +94,7 @@
           color: #a5a5a5;
         }
         & > div {
+          max-width:640px;
           & > input {
             background: #ffffff;
             border: 1px solid #e8e8e8;

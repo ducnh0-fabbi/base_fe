@@ -28,18 +28,18 @@ const routes = [
       },
       {
         path: '/job-manager',
-        name: 'jobs',
+        name: 'job-manager',
         component: views('JobManager.vue'),
         meta: {
-          title: 'Jobs',
+          title: 'Job-manager',
         },
       },
       {
         path: '/job-detail',
-        name: 'jobs',
+        name: 'job',
         component: views('JobDetail.vue'),
         meta: {
-          title: 'Jobs',
+          title: 'Job',
         },
       },
       {
