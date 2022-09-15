@@ -16,8 +16,8 @@
       <div class="bg-white mx-3 mb-3 rounded-3">
         <p class="fw-bold border-bottom mx-3 py-3">Số lượng ứng viên theo stage</p>
         <div class="d-flex list-stage">
-          <div v-for="(item, index) in qty_candidate_stages" :key="index" class="w20">
-            <p class="title">{{ item?.title }}</p>
+          <div v-for="(item, index) in LIST_STAGE" :key="index" class="w20">
+            <p class="title">{{ item?.name }}</p>
             <p class="fw-bold p-3 mx-3 my-4 bg-light fs-1 rounded-3 text-primary" :class="{'text-danger': item.isFail}">{{ item?.quantity }}</p>
           </div>
         </div>
@@ -44,46 +44,10 @@
 </template>
 <script setup>
 import { ref, reactive } from 'vue';
+  import { LIST_STAGE } from '@/constants/user-candidate';
 
 let qty_new_jobs = ref(12);
 let qty_active_jobs = ref(10);
-let qty_candidate_stages = reactive([
-  {
-    title: "Nộp CV",
-    quantity: 18,
-    isFail: false,
-  },
-  {
-    title: "Pass CV",
-    quantity: 15,
-    isFail: false,
-  },
-  {
-    title: "Pass phỏng vấn",
-    quantity: 10,
-    isFail: false,
-  },
-  {
-    title: "Chưa có kế hoạch thử việc",
-    quantity: 10,
-    isFail: false,
-  },
-  {
-    title: "Sắp hết thử việc",
-    quantity: 14,
-    isFail: false,
-  },
-  {
-    title: "Fail CV",
-    quantity: 3,
-    isFail: true,
-  },
-  {
-    title: "Fail phỏng vấn",
-    quantity: 5,
-    isFail: true,
-  },
-]);
 let interview_schedule_todays = reactive([
   {
     type: "developer",

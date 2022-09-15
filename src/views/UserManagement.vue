@@ -1,5 +1,9 @@
 <template>
   <div>
-    User
+    <CandidateList />
   </div>
 </template>
+
+<script setup>
+ import CandidateList from '@/components/CandidateList.vue';
+</script>
