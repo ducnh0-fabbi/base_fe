@@ -27,6 +27,22 @@ const routes = [
         },
       },
       {
+        path: '/job-manager',
+        name: 'job-manager',
+        component: views('JobManager.vue'),
+        meta: {
+          title: 'Job-manager',
+        },
+      },
+      {
+        path: '/job-detail',
+        name: 'job',
+        component: views('JobDetail.vue'),
+        meta: {
+          title: 'Job',
+        },
+      },
+      {
         path: '/user',
         name: 'user',
         component: views('UserManagement.vue'),

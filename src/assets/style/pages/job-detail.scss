@@ -1,0 +1,185 @@
+@use "../abstracts/colors" as *;
+#jobdetail {
+  text-align: left;
+  background-color: $WHITE_F5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  .jobdetail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    &__header {
+      width: 70%;
+      padding: 20px 13px 20px 34px;
+      background: $WHITE;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &-left {
+        display: flex;
+        flex-direction: row;
+        &.backicon {
+          margin-right: 16px;
+          cursor: pointer;
+        }
+        &.greenrec {
+          margin-right: 10px;
+        }
+        & > span {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          color: $BLACK_05;
+          margin: auto;
+        }
+      }
+      &-right {
+        & > img {
+          cursor: pointer;
+          margin-left: 16px;
+        }
+      }
+    }
+    &__header2 {
+      width: 30%;
+      padding: 20px 16px 20px 16px;
+      background: $WHITE;
+      border-radius: 14px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &-left {
+        & > img {
+          margin-right: 10px;
+        }
+        & > span {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          color: $BLACK_05;
+          margin: auto 0;
+        }
+      }
+      &-right{
+        & > img {
+            cursor: pointer;
+        }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    &__title {
+      padding: 13px 34px;
+      background: $GRAY_EE;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+      background: $WHITE;
+      border-radius: 3.5px;
+      height: 73px;
+      overflow: hidden;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: $GRAY_D9;
+      border-radius: 10px;
+    }
+    &__left {
+      width: 70%;
+      background: $WHITE;
+      border-radius: 14px;
+      margin-top: 6px;
+      padding: 0;
+      &.header {
+        width: 100%;
+        padding: 0 34px;
+        & > h1 {
+          font-weight: 700;
+          font-size: 50px;
+          line-height: 61px;
+          color: $BLUE_3C;
+          padding-top: 10px;
+        }
+        & > p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $GRAY_71;
+        }
+        & > hr {
+          border: 1px solid #e1e1e1;
+          margin: 20px 0;
+        }
+      }
+      &.status {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 34px;
+      }
+      &-number,
+      &-prioritized,
+      &-dayrequest,
+      &-dayonboard,
+      &-status1 {
+        margin-right: 21px;
+        & > p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $GRAY_94;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+        & > h1 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          color: $BLUE_3C;
+          text-align: center;
+          margin-bottom: 0;
+        }
+      }
+      &.body {
+        padding: 0 34px;
+        max-height: 430px;
+        overflow-y: scroll;
+        width: 100%;
+        & > p {
+          margin: 14px 0 0 0;
+          font-weight: bold;
+        }
+      }
+      & > hr {
+        margin: 20px 34px;
+        border: 1px solid #e1e1e1;
+      }
+    }
+    &__right {
+      width: 30%;
+      margin-top: 6px;
+      padding: 16px;
+      margin-left: 20px;
+      background: $WHITE;
+      border-radius: 14px;
+      &--list {
+        margin-bottom: 16px;
+        & > img {
+          margin-right: 16px;
+        }
+        & > span {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $BLUE_1E;
+        }
+      }
+    }
+  }
+}

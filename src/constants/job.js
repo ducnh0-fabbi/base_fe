@@ -16,6 +16,27 @@ export const LIST_COMPANIES = [
   }
 ];
 
+export const LIST_BLOCKS = [
+  {
+    id: 1,
+    name: 'F1'
+  },
+  {
+    id: 2,
+    name: 'F2'
+  }
+];
+export const LIST_UNITS = [
+  {
+    id: 1,
+    name: 'Bộ phận phát triển số 1'
+  },
+  {
+    id: 2,
+    name: 'Bộ phận phát triển số 2'
+  }
+];
+
 export const STATUS_JOB_OPEN = 'jobOpens';
 export const STATUS_JOB_PENDING = 'jobPendings';
 export const STATUS_JOB_DOING = 'jobDoings';

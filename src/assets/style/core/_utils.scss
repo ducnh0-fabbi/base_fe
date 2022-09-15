@@ -23,4 +23,7 @@
   .border-radius-#{$i} {
     border-radius: $i * 1px !important;
   }
+  .padding-#{$i} {
+    padding: $i * 1px !important
+  }
 }
