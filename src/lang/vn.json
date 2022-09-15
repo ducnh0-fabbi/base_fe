@@ -29,17 +29,25 @@
         "time_onboard": "Ngày onboard",
         "amount": "Số lượng",
         "men_request": "Người yêu cầu",
-        "review": "Xem chi tiết"
+        "review": "Xem chi tiết",
+        "username": "Họ và tên",
+        "position": "Vị trí ứng tuyển",
+        "salary": "Mức lương",
+        "stage": "Stage"
     },
 
     "placeholder": {
         "change": "Lựa chọn",
-        "job": "Nhập tên job"
+        "job": "Nhập tên job",
+        "username": "Nhập họ và tên",
+        "salary_max": "Nhập mức lương (max)",
+        "salary_min": "Nhập mức lương (min)"
     },
 
     "header": {
         "filter": "Bộ lọc dữ liệu",
-        "list_job": "Danh sách jobs"
+        "list_job": "Danh sách jobs",
+        "list_user": "Danh sách ứng viên"
     },
 
     "sidebar": {
