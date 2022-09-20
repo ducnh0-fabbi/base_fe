@@ -26,4 +26,32 @@
   .padding-#{$i} {
     padding: $i * 1px !important
   }
+  .padding-left-#{$i} {
+    padding-left: $i * 1px !important
+  }
+  .padding-right-#{$i} {
+    padding-right: $i * 1px !important
+  }
+  .padding-top-#{$i} {
+    padding-top: $i * 1px !important
+  }
+  .padding-bottom-#{$i} {
+    padding-bottom: $i * 1px !important
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-row{
+  flex-direction: row;
+}
+.margin-auto{
+  margin: auto;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
