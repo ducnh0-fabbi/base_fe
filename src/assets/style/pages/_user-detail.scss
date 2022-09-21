@@ -1,0 +1,84 @@
+@use '../abstracts/colors' as *;
+
+#candidate-detail {
+  background: $WHITE_EA;
+
+  .card {
+    border: 0;
+
+    &__left {
+      width: 70%;
+    }
+
+    &__right {
+      width: 30%;
+      // height: 80%;
+    }
+  }
+
+  .prelabel {
+    width: 8px;
+    height: 30px;
+    border-radius: 14px;
+
+    &__success {
+      background: #3DC67C;
+    }
+
+    &__warning {
+      background: #F58722;
+      ;
+    }
+  }
+
+  .label {
+    font-size: 14px;
+    color: #949090;
+  }
+
+  .value {
+    font-size: 20px;
+    color: #3C48C7;
+  }
+
+  .bg-label {
+    background-color: #EEEEEE;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    background: #D9D9D9;
+  }
+
+  .circle {
+    width: 24px;
+    height: 24px;
+    background-color: $WHITE_EA;
+
+    &__check {
+      background-color: #3DC67C;
+    }
+  }
+
+  .line {
+    width: 5px;
+    height: 50px;
+    border-radius: 2.5px;
+    background: $WHITE_EA;
+
+    &__success {
+      background: #3DC67C;
+    }
+  }
+
+  .ml-center {
+    margin-left: 30%;
+  }
+
+  .dot-inprogress {
+    width: 12px;
+    height: 12px;
+    background: $WHITE;
+  }
+}

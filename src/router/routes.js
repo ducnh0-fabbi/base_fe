@@ -43,11 +43,19 @@ const routes = [
         },
       },
       {
-        path: '/user',
+        path: '/users',
         name: 'user',
         component: views('UserManagement.vue'),
         meta: {
           title: 'User',
+        },
+      },
+      {
+        path: '/user-detail',
+        name: 'use-detail',
+        component: views('UserDetail.vue'),
+        meta: {
+          title: 'User Detail',
         },
       },
       {
