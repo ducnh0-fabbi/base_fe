@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import routes from '@/router/routes';
 import middlewareAuth from '@/middleware/auth';
+import { getAccessToken } from '@/utils/token';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -49,6 +50,10 @@ router.beforeEach((to, from, next) => {
     const nextMiddleware = nextFactory(context, routeMiddleware, 1);
 
     return routeMiddleware[0]({ ...context, next: nextMiddleware });
+  }
+
+  if(getAccessToken()) {
+    return next({name: 'dashboard'});
   }
 
   return next();
