@@ -6,9 +6,9 @@ const routes = [
   {
     path: '/',
     component: () => import('../layouts/DefaultLayout.vue'),
-    // meta: {
-    //   middleware: true
-    // },
+    meta: {
+      middleware: true
+    },
     children: [
       {
         path: '/',

@@ -24,7 +24,8 @@
   import { useStore } from 'vuex';
   import { notification } from 'ant-design-vue';
   import i18n from '@/plugins/i18n';
-  import { useLoading } from 'vue-loading-overlay'
+  import { useLoading } from 'vue-loading-overlay';
+  import { useRouter } from 'vue-router';
 
   let email = ref(null);
 
@@ -33,6 +34,8 @@
   const $loading = useLoading()
 
   const store = useStore();
+
+  const router = useRouter();
 
   const onSubmit = async () => {
     const loader = $loading.show();
@@ -44,7 +47,8 @@
     if (isLogin) {
       notification['success']({
         message: i18n.global.t('message.login_success')
-      })
+      });
+      router.push({ name: 'dashboard'});
     } else {
       notification['error']({
         message: i18n.global.t('message.login_fail')
