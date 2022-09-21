@@ -4,7 +4,7 @@
       <div class="content_header mb-3">
         <div class="content_header--top">
           <div class="content_header--top-filter margin-bottom-20">
-            <p class="font-size-18 font-weight-7 mb-0">{{ $i18n.t('header.filter') }}</p>
+            <p class="fs-6 font-weight-7 mb-0">{{ $i18n.t('header.filter') }}</p>
           </div>
           <div class="margin-bottom-20 content_header--top__border" />
           <div class="d-flex flex-wrap margin-bottom-20">
@@ -64,31 +64,27 @@
         </div>
         <div class="content_center--body px-3">
           <table>
-            <!-- <thead> -->
-              <tr class="p-2">
-                <th>{{ $i18n.t('label.username') }}</th>
-                <th>{{ $i18n.t('label.position') }}</th>
-                <th>Level</th>
-                <th>Stage hiện tại</th>
-                <th>Người tiếp nhận</th>
-                <th>Hành động</th>
-              </tr>
-            <!-- </thead> -->
-            <!-- <tbody> -->
-              <tr v-for="candidate in LIST_CANDIDATE" :key="candidate.id">
-                <td>{{ candidate.name }}</td>
-                <td>{{ candidate.position }}</td>
-                <td>{{ candidate.level }}</td>
-                <td>{{ candidate.stage }}</td>
-                <td>{{ candidate.hr_receive }}</td>
-                <td>
-                  <div class="d-flex align-items-center justify-content-center text-">
-                    <img src="@/assets/images/icon-detail.svg" alt="icon detail">&nbsp;
-                    <a href="">Chi tiết</a>
-                  </div>
-                </td>
-              </tr>
-            <!-- </tbody> -->
+            <tr class="p-2">
+              <th>{{ $i18n.t('label.username') }}</th>
+              <th>{{ $i18n.t('label.position') }}</th>
+              <th>Level</th>
+              <th>Stage hiện tại</th>
+              <th>Người tiếp nhận</th>
+              <th>Hành động</th>
+            </tr>
+            <tr v-for="candidate in LIST_CANDIDATE" :key="candidate.id">
+              <td>{{ candidate.name }}</td>
+              <td>{{ candidate.position }}</td>
+              <td>{{ candidate.level }}</td>
+              <td>{{ candidate.stage }}</td>
+              <td>{{ candidate.hr_receive }}</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-center text-">
+                  <img src="@/assets/images/icon-detail.svg" alt="icon detail">&nbsp;
+                  <a href="/user-detail">Chi tiết</a>
+                </div>
+              </td>
+            </tr>
           </table>
         </div>
       </div>

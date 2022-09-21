@@ -1,70 +1,75 @@
 {
-    "button": {
-        "confirm": "Đồng ý",
-        "back": "Trở lại",
-        "login": "Đăng nhập",
-        "active": "Active",
-        "inactive": "Inactive",
-        "export": "Export",
-        "search": "Tìm kiếm"
-    },
-
-    "message": {
-        "login": "Đăng nhập",
-        "login_success": "Đăng nhập thành công",
-        "login_fail": "Đăng nhập thất bại"
-    },
-
-    "label": {
-        "job": "Tên Job",
-        "company": "Công ty",
-        "block": "Khối",
-        "group": "Bộ phận",
-        "time_start": "Thời gian bắt đầu",
-        "time_end": "Thời gian kết thúc",
-        "skill": "Skill",
-        "level": "Level",
-        "priority": "Mức độ ưu tiên",
-        "time_request": "Ngày yêu cầu",
-        "time_onboard": "Ngày onboard",
-        "amount": "Số lượng",
-        "men_request": "Người yêu cầu",
-        "review": "Xem chi tiết",
-        "username": "Họ và tên",
-        "position": "Vị trí ứng tuyển",
-        "salary": "Mức lương",
-        "stage": "Stage"
-    },
-
-    "placeholder": {
-        "change": "Lựa chọn",
-        "job": "Nhập tên job",
-        "username": "Nhập họ và tên",
-        "salary_max": "Nhập mức lương (max)",
-        "salary_min": "Nhập mức lương (min)"
-    },
-
-    "header": {
-        "filter": "Bộ lọc dữ liệu",
-        "list_job": "Danh sách jobs",
-        "list_user": "Danh sách ứng viên"
-    },
-
-    "sidebar": {
-        "dashboard": "Dashboard",
-        "user": "Ứng Viên",
-        "jobs": "Jobs",
-        "interview": "Lịch Phỏng Vấn"
-    },
-
-    "validations": {
-        "email": "không hợp lệ",
-        "required": "là bắt buộc",
-        "password": "không hợp lệ"
-    },
-
-    "property": {
-        "email": "Email",
-        "password": "Mật khẩu"
-    }
+  "button": {
+    "confirm": "Đồng ý",
+    "back": "Trở lại",
+    "login": "Đăng nhập",
+    "active": "Active",
+    "inactive": "Inactive",
+    "export": "Export",
+    "search": "Tìm kiếm",
+    "comment": "Bình luận"
+  },
+  "message": {
+    "login": "Đăng nhập",
+    "login_success": "Đăng nhập thành công",
+    "login_fail": "Đăng nhập thất bại"
+  },
+  "label": {
+    "job": "Tên Job",
+    "company": "Công ty",
+    "block": "Khối",
+    "group": "Bộ phận",
+    "time_start": "Thời gian bắt đầu",
+    "time_end": "Thời gian kết thúc",
+    "skill": "Skill",
+    "level": "Level",
+    "priority": "Mức độ ưu tiên",
+    "time_request": "Ngày yêu cầu",
+    "time_onboard": "Ngày onboard",
+    "amount": "Số lượng",
+    "men_request": "Người yêu cầu",
+    "review": "Xem chi tiết",
+    "username": "Họ và tên",
+    "position": "Vị trí ứng tuyển",
+    "salary": "Mức lương",
+    "stage": "Stage",
+    "gender": "Giới tính",
+    "date_of_birth": "Ngày sinh",
+    "phone_number": "Số điện thoại",
+    "school": "Trường học",
+    "email": "Email",
+    "foreign": "Ngoại ngữ",
+    "basic_experience": "Kinh nghiệm cơ bản",
+    "salary_present": "Mức lương hiện tại",
+    "salary_desire": "Mức lương mong muốn"
+  },
+  "placeholder": {
+    "change": "Lựa chọn",
+    "job": "Nhập tên job",
+    "username": "Nhập họ và tên",
+    "salary_max": "Nhập mức lương (max)",
+    "salary_min": "Nhập mức lương (min)"
+  },
+  "header": {
+    "filter": "Bộ lọc dữ liệu",
+    "list_job": "Danh sách jobs",
+    "list_user": "Danh sách ứng viên",
+    "user_detail": "Thông tin ứng viên",
+    "recruitment_flow": "Luồng tuyển dụng"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "user": "Ứng Viên",
+    "jobs": "Jobs",
+    "interview": "Lịch Phỏng Vấn"
+  },
+  "validations": {
+    "email": "không hợp lệ",
+    "required": "là bắt buộc",
+    "password": "không hợp lệ"
+  },
+  "property": {
+    "email": "Email",
+    "password": "Mật khẩu"
+  }
 }
