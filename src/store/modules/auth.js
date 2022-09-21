@@ -24,8 +24,8 @@ export const getters = {
 export const mutations = {
   [AUTH.LOGIN](state, data) {
     if (!data.error) {
-      state.accessToken = data.data.token;
-      setAccessToken(data.data.token);
+      state.accessToken = data.token;
+      setAccessToken(data.token);
     }
   },
 
