@@ -3,6 +3,10 @@
 #user-candidate {
   background: $WHITE_EA;
 
+  .text-purple {
+    color: #DB2B9F;
+  }
+
   .content {
     &_header {
       background: $WHITE;
@@ -37,7 +41,7 @@
           border: none
         }
 
-        &.__job {
+        &.__user {
           padding: 0 15px
         }
       }
@@ -52,35 +56,42 @@
       }
 
       &--body {
-        table { 
-          border-collapse:separate; 
+        table {
+          border-collapse: separate;
           border-spacing: 0 0.75em;
           width: 100%;
 
           th {
             padding: 1em;
             margin: 5px;
+
             &:first-child {
               padding: 6px;
               border-radius: 1em 0 0 1em;
             }
+
             &:last-child {
               border-radius: 0 1em 1em 0;
             }
           }
+
           td {
             padding: 1em;
+
             &:first-child {
               padding: 6px;
               border-radius: 1em 0 0 1em;
             }
+
             &:last-child {
               border-radius: 0 1em 1em 0;
             }
           }
+
           tr {
             box-sizing: border-box;
             border-radius: 1em;
+
             &:first-child {
               background: $BLUE_D2;
               color: $BLUE_00;
@@ -88,10 +99,54 @@
               overflow: hidden;
               border: 0;
             }
+
             &:hover {
               td {
-                background-color: $WHITE_FB;
+                background-color: #FFFCEA;
               }
+            }
+          }
+
+          .list-action {
+            :hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .dropbtn {
+          border: none;
+          cursor: pointer;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+
+          &:hover {
+            .dropdown-content {
+              display: block;
+            }
+          }
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: $WHITE;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+
+          a {
+            text-align: left;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+              background-color: #f1f1f1;
             }
           }
         }

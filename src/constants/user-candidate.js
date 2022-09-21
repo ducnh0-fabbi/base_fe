@@ -65,7 +65,10 @@ export const LIST_CANDIDATE = [
     position: 'Developer',
     level: 'Junior',
     stage: 'Pass CV',
-    hr_receive: 'Trúc VT'
+    hr_receive: 'Trúc VT',
+    email: 'anv@gamil.com',
+    phone_number: '0164678945',
+    men_request: 'Trần Minh Chính'
   },
   {
     id: 2,
@@ -73,7 +76,10 @@ export const LIST_CANDIDATE = [
     position: 'Developer',
     level: 'Senior',
     stage: 'Pass CV',
-    hr_receive: 'Tuyến NTK'
+    hr_receive: 'Tuyến NTK',
+    email: 'avv@gamil.com',
+    phone_number: '0164678945',
+    men_request: 'Trần Minh Chính'
   },
   {
     id: 3,
@@ -81,7 +87,10 @@ export const LIST_CANDIDATE = [
     position: 'Tester',
     level: 'Fresher',
     stage: 'Pass CV',
-    hr_receive: 'Phương NT'
+    hr_receive: 'Phương NT',
+    email: 'ynq@gamil.com',
+    phone_number: '0164678945',
+    men_request: 'Trần Minh Chính'
   },
   {
     id: 4,
@@ -89,7 +98,10 @@ export const LIST_CANDIDATE = [
     position: 'Developer',
     level: 'Senior',
     stage: 'Pass CV',
-    hr_receive: 'Tuyến NTK'
+    hr_receive: 'Tuyến NTK',
+    email: 'avv@gamil.com',
+    phone_number: '0164678945',
+    men_request: 'Trần Minh Chính'
   },
   {
     id: 5,
@@ -97,6 +109,9 @@ export const LIST_CANDIDATE = [
     position: 'Tester',
     level: 'Fresher',
     stage: 'Pass CV',
-    hr_receive: 'Trúc VT'
+    hr_receive: 'Trúc VT',
+    email: 'ynv@gamil.com',
+    phone_number: '0164678945',
+    men_request: 'Trần Minh Chính'
   },
 ]
