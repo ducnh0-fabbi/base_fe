@@ -28,6 +28,7 @@
     "time_onboard": "Ngày onboard",
     "amount": "Số lượng",
     "men_request": "Người yêu cầu",
+    "hr_receive": "Người tiếp nhận",
     "review": "Xem chi tiết",
     "username": "Họ và tên",
     "position": "Vị trí ứng tuyển",
@@ -41,14 +42,19 @@
     "foreign": "Ngoại ngữ",
     "basic_experience": "Kinh nghiệm cơ bản",
     "salary_present": "Mức lương hiện tại",
-    "salary_desire": "Mức lương mong muốn"
+    "salary_desire": "Mức lương mong muốn",
+    "source": "Nguồn",
+    "time_sent": "Ngày gửi CV",
+    "action": "Hành động"
   },
   "placeholder": {
     "change": "Lựa chọn",
     "job": "Nhập tên job",
     "username": "Nhập họ và tên",
     "salary_max": "Nhập mức lương (max)",
-    "salary_min": "Nhập mức lương (min)"
+    "salary_min": "Nhập mức lương (min)",
+    "email": "Nhập email",
+    "phone_number": "Nhập số điện thoại"
   },
   "header": {
     "filter": "Bộ lọc dữ liệu",
