@@ -21,6 +21,6 @@ const log = () => {
 const emit = defineEmits(["cancel"]);
 
 const cancel = () => {
-  emit('cancel');
+  emit("cancel");
 };
 </script>

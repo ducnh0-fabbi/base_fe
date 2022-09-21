@@ -27,7 +27,7 @@
           <input
             type="text"
             placeholder="Nhập tên job"
-            :value="filter['job']"
+            v-model="filter['job']"
             @input="handleChange"
           />
         </div>
@@ -70,7 +70,7 @@
             class="f-height w-100 h-100 border-radius-14"
             format="DD/MM/YYYY"
             placeholder="DD/MM/YYYY"
-            v-model:value="filter['startday']"
+            v-model:value="filter['startDay']"
             :allowClear="false"
             :showToday="false"
             :inputReadOnly="true"
@@ -92,7 +92,7 @@
             class="f-height w-100 h-100 border-radius-14 padding-8"
             format="DD/MM/YYYY"
             placeholder="DD/MM/YYYY"
-            v-model:value="filter['endday']"
+            v-model:value="filter['endDay']"
             :allowClear="false"
             :showToday="false"
             :inputReadOnly="true"
@@ -137,34 +137,75 @@
           <p class="listjob__body header--endday">Thời gian kết thúc</p>
           <p class="listjob__body header--action">Hành động</p>
         </div>
-        <router-link to="job-detail">
-          <div
-            v-for="item in listjob"
-            :key="item.id"
-            class="listjob__body body"
-          >
-            <p class="listjob__body body--job">{{ item.job }}</p>
-            <p class="listjob__body body--company">{{ item.company }}</p>
-            <p class="listjob__body body--block">{{ item.block }}</p>
-            <p class="listjob__body body--unit">{{ item.unit }}</p>
-            <p class="listjob__body body--numberneed">{{ item.numberneed }}</p>
-            <p class="listjob__body body--numberhave">{{ item.numberhave }}</p>
-            <p class="listjob__body body--startday">{{ item.startday }}</p>
-            <p class="listjob__body body--endday">{{ item.endday }}</p>
-            <p class="listjob__body body--action">
-              <img
-                v-if="!action"
-                src="@/assets/images/action.svg"
-                @click="showAction"
-              />
-              <img
-                v-if="action"
-                src="@/assets/images/actionactive.svg"
-                @click="hideAction"
-              />
+        <div
+          v-for="(item, index) in listjob"
+          :key="index"
+          class="listjob__body body"
+          :class="key === index && isShow ? 'focus' : ''"
+          @click="showMenu(index)"
+        >
+          <!-- <router-link
+            to="job-detail"
+            class="d-flex justify-content-space-between max-width-1500 w-100"
+          > -->
+            <p class="listjob__body body--job margin-bottom-0">
+              {{ item.job }}
             </p>
+            <p class="listjob__body body--company margin-bottom-0">
+              {{ item.company }}
+            </p>
+            <p class="listjob__body body--block margin-bottom-0">
+              {{ item.block }}
+            </p>
+            <p class="listjob__body body--unit margin-bottom-0">
+              {{ item.unit }}
+            </p>
+            <p class="listjob__body body--numberneed margin-bottom-0">
+              {{ item.numberNeed }}
+            </p>
+            <p class="listjob__body body--numberhave margin-bottom-0">
+              {{ item.numberHave }}
+            </p>
+            <p class="listjob__body body--startday margin-bottom-0">
+              {{ item.startDay }}
+            </p>
+            <p class="listjob__body body--endday margin-bottom-0">
+              {{ item.endDay }}
+            </p>
+          <!-- </router-link> -->
+          <div class="listjob__body">
+            <div
+              class="listjob__body body--actionicon"
+              :class="key === index && isShow ? 'bg-blue' : ''"
+            >
+              <img
+                src="@/assets/images/threedot.svg"
+                @click="showMenu(index)"
+              />
+            </div>
+            <div
+              v-if="key === index && isShow"
+              class="p-absolute padding-15 border-radius-14 menu"
+            >
+              <router-link to="job-detail">
+                <div class="d-flex flex-direction-row cursor-pointer menu__hover">
+                  <img src="@/assets/images/file-Filled.svg" class="margin-right-9"/>
+                  <span>Chi tiết</span>
+                </div>
+              </router-link>
+              <hr />
+              <div class="d-flex flex-direction-row cursor-pointer menu__hover">
+                <img src="@/assets/images/editicon.svg" class="margin-right-9"/>
+                <span>Chỉnh sửa</span>
+              </div>
+              <hr />
+              <div class="d-flex flex-direction-row cursor-pointer menu__hover">
+                <img src="@/assets/images/delicon.svg" class="margin-right-9"/>
+                <span>Xóa</span>
+              </div>
+            </div>
           </div>
-        </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -181,10 +222,10 @@ const filter = reactive({
   company: "",
   block: "",
   unit: "",
-  numberneed: "",
-  numberhave: "",
-  startday: "",
-  endday: "",
+  numberNeed: "",
+  numberHave: "",
+  startDay: "",
+  endDay: "",
 });
 
 const store = useStore();
@@ -195,10 +236,16 @@ let filterBlock = "";
 let filterUnit = "";
 let filterStartDay = "";
 let filterEndDay = "";
+let isShow = ref(true);
+let key = ref(-1);
 let action = ref(false);
 const active = () => {
   if (action.value == true) action.value = false;
   else action.value = true;
+};
+const showMenu = (e) => {
+  key.value = e;
+  isShow.value = !isShow.value;
 };
 
 const onSelect = (data, type) => {
@@ -217,11 +264,11 @@ const onSelect = (data, type) => {
 };
 
 const search = () => {
-  if (filter["startday"] !== "") {
-    filterStartDay = dayjs(filter["startday"]).format("DD/MM/YYYY");
+  if (filter["startDay"] !== "") {
+    filterStartDay = dayjs(filter["startDay"]).format("DD/MM/YYYY");
   }
-  if (filter["endday"] !== "") {
-    filterEndDay = dayjs(filter["endday"]).format("DD/MM/YYYY");
+  if (filter["endDay"] !== "") {
+    filterEndDay = dayjs(filter["endDay"]).format("DD/MM/YYYY");
   }
   const array = listjob.value.filter(function (el) {
     return (
@@ -229,8 +276,8 @@ const search = () => {
       el.company.match(filterCompany) &&
       el.block.match(filterBlock) &&
       el.unit.match(filterUnit) &&
-      el.startday.match(filterStartDay) &&
-      el.endday.match(filterEndDay)
+      el.startDay.match(filterStartDay) &&
+      el.endDay.match(filterEndDay)
     );
   });
   if (

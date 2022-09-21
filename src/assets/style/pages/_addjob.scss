@@ -23,21 +23,20 @@
       border-radius: 14px;
       margin-bottom: 20px;
     }
-    &__left,
-    &__right {
-      display: flex;
-      flex-direction: column;
-      & > label {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.0703846px;
-        color: $BLACK_05;
-      }
-      & > input {
-        border: 1px solid #e8e8e8;
-        width: 360px;
-        color: $GRAY_A5;
+    & > div {
+      & > div {
+        & > label {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.0703846px;
+          color: $BLACK_05;
+        }
+        & > input {
+          border: 1px solid $WHITE_E8;
+          width: 360px;
+          color: $GRAY_A5;
+        }
       }
     }
   }
@@ -56,13 +55,11 @@
       flex-direction: column;
       justify-content: center;
       padding: 20px;
-
-      // padding-left: 27%;
-      // padding-right: 27%;
       margin-top: 6px;
       border-radius: 14px;
       // margin-bottom: 20px;
     }
+    
     & > div {
       max-width: 740px;
       & > label {
@@ -73,7 +70,7 @@
         color: $BLACK_05;
       }
       & > input {
-        border: 1px solid #e8e8e8;
+        border: 1px solid $WHITE_E8;
         width: 360px;
         color: $GRAY_A5;
       }

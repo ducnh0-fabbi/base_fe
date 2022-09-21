@@ -70,20 +70,34 @@
     "recruitment_flow": "Luồng tuyển dụng",
         "information": "Thông tin cơ bản",
         "requirement": "Yêu cầu công việc"
-  },
-  "sidebar": {
-    "dashboard": "Dashboard",
-    "user": "Ứng Viên",
-    "jobs": "Jobs",
-    "interview": "Lịch Phỏng Vấn"
-  },
-  "validations": {
-    "email": "không hợp lệ",
-    "required": "là bắt buộc",
-    "password": "không hợp lệ"
-  },
-  "property": {
-    "email": "Email",
-    "password": "Mật khẩu"
-  }
+    },
+
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "user": "Ứng Viên",
+        "jobs": "Jobs",
+        "interview": "Lịch Phỏng Vấn"
+    },
+
+    "validations": {
+        "email": "không hợp lệ",
+        "required": "là bắt buộc",
+        "password": "không hợp lệ"
+    },
+
+    "property": {
+        "email": "Email",
+        "password": "Mật khẩu",
+        "job": "Job",
+        "company": "Công ty",
+        "time_onboard": "Ngày Onboard",
+        "amount": "Số lượng",
+        "level": "Level",
+        "salary":"Mức lương",
+        "skill": "Kĩ năng",
+        "more_info": "Mô tả công việc",
+        "priority": "Mức độ ưu tiên",
+        "block":"Khối",
+        "department":"Phòng ban"
+    }
 }
