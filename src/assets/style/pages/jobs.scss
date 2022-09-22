@@ -283,9 +283,25 @@
   .menu {
     box-shadow: 0px 0px 20px $SHADOW025;
     background: $WHITE;
-    &__hover{
-      &>span{
+    & > hr {
+      margin: 0;
+    }
+    &__hover {
+      & > span {
         color: $BLACK_05;
+      }
+    }
+    &__hover:hover {
+      background: $YELLOW__FFF;
+      overflow: hidden;
+      // border-radius: 14px;
+      &:first-child {
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
       }
     }
   }
