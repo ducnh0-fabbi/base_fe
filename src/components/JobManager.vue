@@ -185,21 +185,21 @@
             </div>
             <div
               v-if="key === index && isShow"
-              class="p-absolute padding-15 border-radius-14 menu"
+              class="p-absolute border-radius-14 menu"
             >
               <router-link to="job-detail">
-                <div class="d-flex flex-direction-row cursor-pointer menu__hover">
+                <div class="d-flex flex-direction-row cursor-pointer menu__hover padding-15">
                   <img src="@/assets/images/file-Filled.svg" class="margin-right-9"/>
                   <span>Chi tiết</span>
                 </div>
               </router-link>
               <hr />
-              <div class="d-flex flex-direction-row cursor-pointer menu__hover">
+              <div class="d-flex flex-direction-row cursor-pointer menu__hover padding-15">
                 <img src="@/assets/images/editicon.svg" class="margin-right-9"/>
                 <span>Chỉnh sửa</span>
               </div>
               <hr />
-              <div class="d-flex flex-direction-row cursor-pointer menu__hover">
+              <div class="d-flex flex-direction-row cursor-pointer menu__hover padding-15">
                 <img src="@/assets/images/delicon.svg" class="margin-right-9"/>
                 <span>Xóa</span>
               </div>
