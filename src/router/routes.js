@@ -43,6 +43,14 @@ const routes = [
         },
       },
       {
+        path: '/add-job',
+        name: 'add-job',
+        component: views('AddJob.vue'),
+        meta: {
+          title: 'add-job',
+        },
+      },
+      {
         path: '/users',
         name: 'user',
         component: views('UserManagement.vue'),

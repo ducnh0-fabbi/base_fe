@@ -10,8 +10,8 @@
     max-width: 284px;
     width: 100%;
     overflow: hidden;
-    border: 1px solid #e1e1e1;
-    background: #e1e1e1;
+    border: 1px solid $GRAY_E1;
+    background: $GRAY_E1;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -21,15 +21,15 @@
     &__inactive {
       max-width: 140px;
       width: 100%;
-      background: #e1e1e1;
+      background: $GRAY_E1;
       border: none;
       padding: 8.5px 46px;
     }
   }
 
   .active {
-    background: #ffffff;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14);
+    background: $WHITE;
+    box-shadow: 0px 0px 7px $BLACK_001C;
     border-radius: 10px;
     padding: 8px 46px;
   }
@@ -83,28 +83,28 @@
         & > input,
         & > select {
           height: 40px;
-          background: #ffffff;
-          border: 1px solid #e8e8e8;
+          background: $WHITE;
+          border: 1px solid $WHITE_E8;
           border-radius: 14px;
           padding: 12px 14px;
           font-weight: 400;
           font-size: 14px;
           line-height: 17px;
           letter-spacing: 0.0703846px;
-          color: #a5a5a5;
+          color: $GRAY_A5;
         }
         & > div {
-          max-width:640px;
+          max-width: 640px;
           & > input {
-            background: #ffffff;
-            border: 1px solid #e8e8e8;
+            background: $WHITE;
+            border: 1px solid $WHITE_E8;
             border-radius: 14px;
             padding: 12px 14px;
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             letter-spacing: 0.0703846px;
-            color: #a5a5a5;
+            color: $GRAY_A5;
             max-width: 310px;
             width: 100%;
           }
@@ -150,7 +150,7 @@
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.0703846px;
-        color: #050b46;
+        color: $BLACK_05;
         margin-bottom: 20px;
       }
       &.addjob {
@@ -182,6 +182,9 @@
       }
     }
     &__body {
+      & > a {
+        color: $BLACK_05;
+      }
       &.header,
       &.body {
         display: flex;
@@ -207,7 +210,7 @@
           }
         }
         &--job {
-          max-width: 150px;
+          max-width: 200px;
           width: 100%;
         }
         &--company {
@@ -241,9 +244,22 @@
         &--action {
           max-width: 100px;
           width: 100%;
+        }
+        &--actionicon {
+          width: 16px;
+          margin-right: 84px;
+          background-color: $WHITE_F5;
           cursor: pointer;
+          border-radius: 50%;
         }
       }
+      &.bg-blue {
+        background-color: $BLUE_E7;
+      }
+      &.focus {
+        background-color: $YELLOW__FFF;
+      }
+
       &.body {
         cursor: pointer;
         background-color: $WHITE;
@@ -261,6 +277,15 @@
         background: $YELLOW__FFF;
         border: 1px solid $BLUE_D3;
         border-radius: 14px;
+      }
+    }
+  }
+  .menu {
+    box-shadow: 0px 0px 20px $SHADOW025;
+    background: $WHITE;
+    &__hover{
+      &>span{
+        color: $BLACK_05;
       }
     }
   }

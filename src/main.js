@@ -13,6 +13,7 @@ import vuelidate from "@/plugins/vuelidate";
 import clickOutside from '@/directives/click-outside';
 import VueLoading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/vue-loading.css';
+import CKEditor from '@ckeditor/ckeditor5-vue';
 
 const app = createApp(App);
 app.directive('click-outside', clickOutside);
@@ -24,5 +25,6 @@ app.use(i18n)
 .use(store)
 .use(vuelidate)
 .use(Antd)
+.use(CKEditor)
 .use(VueLoading)
 .mount('#app');

@@ -21,7 +21,7 @@
     "group": "Bộ phận",
     "time_start": "Thời gian bắt đầu",
     "time_end": "Thời gian kết thúc",
-    "skill": "Skill",
+    "skill": "Kĩ năng",
     "level": "Level",
     "priority": "Mức độ ưu tiên",
     "time_request": "Ngày yêu cầu",
@@ -43,6 +43,8 @@
     "basic_experience": "Kinh nghiệm cơ bản",
     "salary_present": "Mức lương hiện tại",
     "salary_desire": "Mức lương mong muốn",
+        "department": "Phòng ban",
+        "job_description": "Mô tả công việc",
     "source": "Nguồn",
     "time_sent": "Ngày gửi CV",
     "action": "Hành động"
@@ -51,31 +53,51 @@
     "change": "Lựa chọn",
     "job": "Nhập tên job",
     "username": "Nhập họ và tên",
+        "salary": "Nhập mức lương",
     "salary_max": "Nhập mức lương (max)",
     "salary_min": "Nhập mức lương (min)",
     "email": "Nhập email",
-    "phone_number": "Nhập số điện thoại"
+    "phone_number": "Nhập số điện thoại",
+        "amount": "Nhập số lượng",
+        "time_onboard": "Nhập thời điểm onboard",
+        "more_skill": "Nhập thêm kĩ năng"
   },
   "header": {
     "filter": "Bộ lọc dữ liệu",
     "list_job": "Danh sách jobs",
     "list_user": "Danh sách ứng viên",
     "user_detail": "Thông tin ứng viên",
-    "recruitment_flow": "Luồng tuyển dụng"
-  },
-  "sidebar": {
-    "dashboard": "Dashboard",
-    "user": "Ứng Viên",
-    "jobs": "Jobs",
-    "interview": "Lịch Phỏng Vấn"
-  },
-  "validations": {
-    "email": "không hợp lệ",
-    "required": "là bắt buộc",
-    "password": "không hợp lệ"
-  },
-  "property": {
-    "email": "Email",
-    "password": "Mật khẩu"
-  }
+    "recruitment_flow": "Luồng tuyển dụng",
+        "information": "Thông tin cơ bản",
+        "requirement": "Yêu cầu công việc"
+    },
+
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "user": "Ứng Viên",
+        "jobs": "Jobs",
+        "interview": "Lịch Phỏng Vấn"
+    },
+
+    "validations": {
+        "email": "không hợp lệ",
+        "required": "là bắt buộc",
+        "password": "không hợp lệ"
+    },
+
+    "property": {
+        "email": "Email",
+        "password": "Mật khẩu",
+        "job": "Job",
+        "company": "Công ty",
+        "time_onboard": "Ngày Onboard",
+        "amount": "Số lượng",
+        "level": "Level",
+        "salary":"Mức lương",
+        "skill": "Kĩ năng",
+        "more_info": "Mô tả công việc",
+        "priority": "Mức độ ưu tiên",
+        "block":"Khối",
+        "department":"Phòng ban"
+    }
 }
