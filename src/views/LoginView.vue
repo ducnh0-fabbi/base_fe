@@ -13,7 +13,7 @@
           <br>
           <ErrorMessage :name="$i18n.t('property.password')" class="errors"/>
         </div>
-        <button class="login-form__login--button font-size-14 margin-bottom-69">{{ $i18n.t('button.login') }}</button>
+        <button class="login-form__login--button font-size-14 margin-bottom-69 font-weight-7">{{ $i18n.t('button.login') }}</button>
       </VeeForm>
     </div>
   </div>

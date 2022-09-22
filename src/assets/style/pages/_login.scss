@@ -9,7 +9,7 @@
   .login-form {
     width: 560px;
     background: rgba(255, 255, 255, 0.7);
-    border: 1px solid #FFFFFF;
+    border: 1px solid $WHITE;
     backdrop-filter: blur(100px);
     padding: 0 53px;
     border-radius: 14px;
@@ -26,7 +26,7 @@
           height: 50px;
           border-radius: 14px;
           width: 100%;
-          border: none;
+          border: 1px solid $WHITE;
           outline: none;
           box-shadow: none;
           padding: 0 20px;

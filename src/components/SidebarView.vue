@@ -23,9 +23,7 @@
 
 <script setup>
   import { OPTIONS_SIDEBAR } from '@/constants/sidebar'
-  import { defineEmits } from 'vue';
-  const emit = defineEmits(['closeSidebar']);
   const closeSidebar = () => {
-    emit('closeSidebar');
+    
   };
 </script>

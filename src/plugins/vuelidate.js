@@ -35,7 +35,7 @@ export default {
         return true;
       }
 
-      if (value.length !== 8) {
+      if (value.length < 6 || value.length > 255) {
         return false;
       }
 

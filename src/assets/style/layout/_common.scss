@@ -5,9 +5,13 @@
   font-size: 12px;
 }
 
-input, button {
+button {
   outline: none;
   box-shadow: none;
+}
+
+input:focus {
+  border: 2px solid $BLUE_1E !important;
 }
 
 .ant-picker-focused, .ant-picker:hover, .ant-picker-focused {
